@@ -1,0 +1,37 @@
+<%- include('./particals/header.ejs')%> <%- include('./particals/navbar.ejs')%>
+
+<section class="registration-container">
+  <div class="registration-section">
+    <h2 class="left-heading">Login</h2>
+    <form action="" method="post" class="form">
+      <div class="input">
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Enter Your Email"
+          class="in"
+        />
+      </div>
+
+      <div class="input">
+        <label for="password">Password :</label>
+        <input
+          type="password"
+          name="password"
+          required
+          placeholder="Enter Your Password"
+          class="in"
+        />
+      </div>
+      <div class="button">
+        <button type="submit" value="submit" class="btn">Login</button>
+      </div>
+    </form>
+    <div class="target">
+      <a href="/registration"> <button class="btn">Resister</button></a>
+    </div>
+  </div>
+</section>
+<%- include('./particals/footer.ejs')%> <%- include('./particals/footer.ejs')%>

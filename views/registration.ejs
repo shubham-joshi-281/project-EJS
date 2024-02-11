@@ -1,0 +1,81 @@
+<%- include('./particals/header.ejs')%> <%- include('./particals/navbar.ejs')%>
+
+<section class="registration-container">
+  <div class="registration-section">
+    <h2 class="left-heading">Registration</h2>
+    <form action="" method="post" class="form">
+      <div class="input">
+        <label for="name">Name :</label>
+        <input
+          type="text"
+          name="name"
+          required
+          placeholder="Enter Your Name"
+          class="in"
+        />
+      </div>
+
+      <div class="input">
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          required
+          name="email"
+          placeholder="Enter Your Email"
+          class="in"
+        />
+      </div>
+
+      <div class="input">
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          required
+          name="age"
+          placeholder="Enter Your Age"
+          class="in"
+        />
+      </div>
+
+      <div class="input">
+        <label for="phone">Contact Number:</label>
+        <input
+          type="number"
+          required
+          name="phone"
+          placeholder="Enter Your Contact Number"
+          class="in"
+        />
+      </div>
+
+      <div class="input">
+        <label for="password">Password :</label>
+        <input
+          type="password"
+          required
+          name="password"
+          placeholder="Enter Your Password"
+          class="in"
+        />
+      </div>
+
+      <div class="input">
+        <label for="confirmpassword">Confirm Password :</label>
+        <input
+          type="password"
+          required
+          name="confirmpassword"
+          placeholder="Confirm Your Password"
+          class="in"
+        />
+      </div>
+      <div class="button">
+        <button type="submit" value="submit" class="btn">register</button>
+      </div>
+    </form>
+    <div class="target">
+      <a href="/login"> <button class="btn">Login</button></a>
+    </div>
+  </div>
+</section>
+<%- include('./particals/footer.ejs')%>

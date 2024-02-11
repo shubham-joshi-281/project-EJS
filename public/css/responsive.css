@@ -1,0 +1,53 @@
+@media only screen and (max-width: 599px) {
+  html {
+    font-size: 50%;
+  }
+  .header-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .nav-mobile {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    display: block;
+    cursor: pointer;
+    z-index: 88;
+  }
+  .navbar {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+    transition: 1s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .nav-ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active .navbar {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .active .nav-mobile .fa-solid[name="close"] {
+    display: block;
+  }
+  .active .nav-mobile .fa-solid[name="open"] {
+    display: none;
+  }
+}
